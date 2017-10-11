@@ -1,0 +1,66 @@
+package com.cniao5.demo.mvp.view;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.cniao5.demo.mvp.R;
+import com.cniao5.demo.mvp.model.User;
+import com.cniao5.demo.mvp.presenter.PresenterMainImpl;
+
+public class MainActivity extends AppCompatActivity  implements ViewBaseMain {
+
+    private EditText et_username ;
+    private EditText et_pwd ;
+    private Button btn_login ;
+
+    private PresenterMainImpl mainPresenterImp ;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        et_username = (EditText) findViewById(R.id.et_username);
+        et_pwd = (EditText) findViewById(R.id.et_pwd);
+        btn_login = (Button) findViewById(R.id.btn_login);
+
+        mainPresenterImp = new PresenterMainImpl();//创建Presenter
+        mainPresenterImp.attachView(this);//绑定View
+
+
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                User user = new User(et_username.getText().toString(),et_pwd.getText().toString());
+                mainPresenterImp.login(user);
+            }
+        });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mainPresenterImp.detachView();//解绑View
+    }
+
+    //---------------ViewBaseMain：只负责MainActivty中的UI逻辑---------------
+    @Override
+    public void loginSuccess(String msg) {
+        showToast(msg);
+    }
+
+    @Override
+    public void loginFailed(String msg) {
+        showToast(msg);
+    }
+
+    @Override
+    public void showToast(String msg) {
+        Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
+    }
+
+}
