@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RxjavaDemo.iml" filepath="$PROJECT_DIR$/RxjavaDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofit-rxjava-demo.iml" filepath="$PROJECT_DIR$/retrofit-rxjava-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofit_demo/retrofit_demo.iml" filepath="$PROJECT_DIR$/retrofit_demo/retrofit_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofit_demo/retrofit_demo.iml" filepath="$PROJECT_DIR$/retrofit_demo/retrofit_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava_demo/rxjava_demo.iml" filepath="$PROJECT_DIR$/rxjava_demo/rxjava_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava_demo/rxjava_demo.iml" filepath="$PROJECT_DIR$/rxjava_demo/rxjava_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava_demo_imagecachelibrary/rxjava_demo_imagecachelibrary.iml" filepath="$PROJECT_DIR$/rxjava_demo_imagecachelibrary/rxjava_demo_imagecachelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava_demo_imagecachelibrary/rxjava_demo_imagecachelibrary.iml" filepath="$PROJECT_DIR$/rxjava_demo_imagecachelibrary/rxjava_demo_imagecachelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava_operation/rxjava_operation.iml" filepath="$PROJECT_DIR$/rxjava_operation/rxjava_operation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava_operation/rxjava_operation.iml" filepath="$PROJECT_DIR$/rxjava_operation/rxjava_operation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava_retrofit_demo/rxjava_retrofit_demo.iml" filepath="$PROJECT_DIR$/rxjava_retrofit_demo/rxjava_retrofit_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava_retrofit_demo/rxjava_retrofit_demo.iml" filepath="$PROJECT_DIR$/rxjava_retrofit_demo/rxjava_retrofit_demo.iml" />
+    </modules>
+  </component>
+</project>

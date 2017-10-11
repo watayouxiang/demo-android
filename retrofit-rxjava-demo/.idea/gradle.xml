@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/retrofit_demo" />
+            <option value="$PROJECT_DIR$/rxjava_demo" />
+            <option value="$PROJECT_DIR$/rxjava_demo_imagecachelibrary" />
+            <option value="$PROJECT_DIR$/rxjava_operation" />
+            <option value="$PROJECT_DIR$/rxjava_retrofit_demo" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
