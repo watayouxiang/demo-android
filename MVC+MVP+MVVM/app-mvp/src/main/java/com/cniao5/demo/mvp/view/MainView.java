@@ -6,7 +6,7 @@ package com.cniao5.demo.mvp.view;
  * Created by xzhang on
  */
 
-public interface ViewBaseMain extends ViewBase {
+public interface MainView extends BaseView {
     void loginSuccess(String msg) ;
     void loginFailed(String msg) ;
 }

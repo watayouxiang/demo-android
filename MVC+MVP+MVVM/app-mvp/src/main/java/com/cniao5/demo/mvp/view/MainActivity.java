@@ -9,15 +9,15 @@ import android.widget.Toast;
 
 import com.cniao5.demo.mvp.R;
 import com.cniao5.demo.mvp.model.User;
-import com.cniao5.demo.mvp.presenter.PresenterMainImpl;
+import com.cniao5.demo.mvp.presenter.MainPresenterImpl;
 
-public class MainActivity extends AppCompatActivity  implements ViewBaseMain {
+public class MainActivity extends AppCompatActivity  implements MainView {
 
     private EditText et_username ;
     private EditText et_pwd ;
     private Button btn_login ;
 
-    private PresenterMainImpl mainPresenterImp ;
+    private MainPresenterImpl mainPresenterImp ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity  implements ViewBaseMain {
         et_pwd = (EditText) findViewById(R.id.et_pwd);
         btn_login = (Button) findViewById(R.id.btn_login);
 
-        mainPresenterImp = new PresenterMainImpl();//创建Presenter
+        mainPresenterImp = new MainPresenterImpl();//创建Presenter
         mainPresenterImp.attachView(this);//绑定View
 
 
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity  implements ViewBaseMain {
         mainPresenterImp.detachView();//解绑View
     }
 
-    //---------------ViewBaseMain：只负责MainActivty中的UI逻辑---------------
+    //---------------MainView：只负责MainActivty中的UI逻辑---------------
     @Override
     public void loginSuccess(String msg) {
         showToast(msg);

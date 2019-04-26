@@ -3,19 +3,19 @@ package com.cniao5.demo.mvp.presenter;
 import android.text.TextUtils;
 
 import com.cniao5.demo.mvp.model.User;
-import com.cniao5.demo.mvp.view.ViewBaseMain;
+import com.cniao5.demo.mvp.view.MainView;
 
 
 /**
  * MainActivity业务逻辑的具体实现
  * Created by xzhang
  */
-public class PresenterMainImpl implements PresenterBaseMain {
+public class MainPresenterImpl implements MainPresenter {
 
-    private ViewBaseMain mainBaseView;
+    private MainView mainBaseView;
 
     @Override
-    public void attachView(ViewBaseMain v) {
+    public void attachView(MainView v) {
         this.mainBaseView = v;
     }
 
