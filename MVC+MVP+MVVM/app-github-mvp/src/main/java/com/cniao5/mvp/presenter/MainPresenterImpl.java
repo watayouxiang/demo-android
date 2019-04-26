@@ -1,9 +1,8 @@
-package com.cniao5.mvp.presenter.impl;
+package com.cniao5.mvp.presenter;
 
 import com.cniao5.mvp.model.GithubService;
 import com.cniao5.mvp.model.Repo;
-import com.cniao5.mvp.presenter.MainPresenter;
-import com.cniao5.mvp.view.MainBaseView;
+import com.cniao5.mvp.view.MainView;
 
 import java.util.List;
 
@@ -20,13 +19,13 @@ import rx.schedulers.Schedulers;
 
 public class MainPresenterImpl implements MainPresenter {
 
-    private MainBaseView mainBaseView ;
+    private MainView mainBaseView ;
     private List<Repo> repoList ;
     private Subscription subscribe ;
 
 
     @Override
-    public void attachView(MainBaseView view) {
+    public void attachView(MainView view) {
         this.mainBaseView = view ;
     }
 

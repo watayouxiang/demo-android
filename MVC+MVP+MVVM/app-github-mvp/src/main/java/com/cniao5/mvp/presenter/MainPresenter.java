@@ -1,6 +1,6 @@
 package com.cniao5.mvp.presenter;
 
-import com.cniao5.mvp.view.MainBaseView;
+import com.cniao5.mvp.view.MainView;
 
 /**
  * <p>Description:
@@ -9,7 +9,7 @@ import com.cniao5.mvp.view.MainBaseView;
  * @author xzhang
  */
 
-public interface MainPresenter extends BasePresenter<MainBaseView> {
+public interface MainPresenter extends BasePresenter<MainView> {
     //在这里添加MainPresenter特有的方法
     void loadGitHubJava() ;
 }

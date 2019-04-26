@@ -1,4 +1,4 @@
-package com.cniao5.mvp.view.impl;
+package com.cniao5.mvp.view;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,12 +12,11 @@ import android.widget.TextView;
 import com.cniao5.mvp.R;
 import com.cniao5.mvp.adapter.RepoListAdapter;
 import com.cniao5.mvp.model.Repo;
-import com.cniao5.mvp.presenter.impl.MainPresenterImpl;
-import com.cniao5.mvp.view.MainBaseView;
+import com.cniao5.mvp.presenter.MainPresenterImpl;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements MainBaseView {
+public class MainActivity extends AppCompatActivity implements MainView {
 
     private Toolbar toolbar ;
     private RecyclerView recyclerView;

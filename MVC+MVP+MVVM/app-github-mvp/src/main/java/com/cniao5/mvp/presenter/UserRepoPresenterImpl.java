@@ -1,9 +1,8 @@
-package com.cniao5.mvp.presenter.impl;
+package com.cniao5.mvp.presenter;
 
 import com.cniao5.mvp.model.GithubService;
 import com.cniao5.mvp.model.Repository;
-import com.cniao5.mvp.presenter.UserRepoPresenter;
-import com.cniao5.mvp.view.UserRepoBaseView;
+import com.cniao5.mvp.view.UserRepoView;
 
 import java.util.List;
 
@@ -19,11 +18,11 @@ import rx.schedulers.Schedulers;
 
 public class UserRepoPresenterImpl implements UserRepoPresenter {
 
-    private UserRepoBaseView userRepoBaseView ;
+    private UserRepoView userRepoBaseView ;
     private List<Repository> repositoryList ;
 
     @Override
-    public void attachView(UserRepoBaseView view) {
+    public void attachView(UserRepoView view) {
         this.userRepoBaseView = view ;
     }
 

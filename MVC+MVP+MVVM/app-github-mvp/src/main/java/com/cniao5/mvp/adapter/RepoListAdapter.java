@@ -14,7 +14,7 @@ import com.cniao5.mvp.App;
 import com.cniao5.mvp.R;
 import com.cniao5.mvp.model.Repo;
 import com.cniao5.mvp.util.FavoReposHelper;
-import com.cniao5.mvp.view.impl.UserRepoActivity;
+import com.cniao5.mvp.view.UserRepoActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

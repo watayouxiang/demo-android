@@ -10,6 +10,6 @@ import java.util.List;
  * @author xzhang
  */
 
-public interface MainBaseView extends BaseView<List<Repo>>{
+public interface MainView extends BaseView<List<Repo>>{
     //添加MainBaseView中特有的UI逻辑显示
 }

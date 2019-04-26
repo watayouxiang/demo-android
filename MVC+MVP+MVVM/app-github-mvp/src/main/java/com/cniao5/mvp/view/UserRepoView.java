@@ -11,6 +11,6 @@ import java.util.List;
  * @author xzhang
  */
 
-public interface UserRepoBaseView extends BaseView<List<Repository>> {
+public interface UserRepoView extends BaseView<List<Repository>> {
     //在这里添加UserRepoBaseView特有的UI逻辑
 }

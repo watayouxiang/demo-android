@@ -1,6 +1,6 @@
 package com.cniao5.mvp.presenter;
 
-import com.cniao5.mvp.view.UserRepoBaseView;
+import com.cniao5.mvp.view.UserRepoView;
 
 /**
  * <p>Description:
@@ -9,7 +9,7 @@ import com.cniao5.mvp.view.UserRepoBaseView;
  * @author xzhang
  */
 
-public interface UserRepoPresenter  extends BasePresenter<UserRepoBaseView>{
+public interface UserRepoPresenter  extends BasePresenter<UserRepoView>{
     //添加UserRepoPresenter中特有的业务逻辑
 
     void loadGitHubUserRepo(String userName) ;

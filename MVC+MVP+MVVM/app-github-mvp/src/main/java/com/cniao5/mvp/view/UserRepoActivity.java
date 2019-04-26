@@ -1,4 +1,4 @@
-package com.cniao5.mvp.view.impl;
+package com.cniao5.mvp.view;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -18,12 +18,11 @@ import android.widget.TextView;
 import com.cniao5.mvp.R;
 import com.cniao5.mvp.adapter.RepositoryAdapter;
 import com.cniao5.mvp.model.Repository;
-import com.cniao5.mvp.presenter.impl.UserRepoPresenterImpl;
-import com.cniao5.mvp.view.UserRepoBaseView;
+import com.cniao5.mvp.presenter.UserRepoPresenterImpl;
 
 import java.util.List;
 
-public class UserRepoActivity extends AppCompatActivity implements UserRepoBaseView,View.OnClickListener{
+public class UserRepoActivity extends AppCompatActivity implements UserRepoView,View.OnClickListener{
 
     private Toolbar toolbar ;
     private EditText edit_text_username ;
