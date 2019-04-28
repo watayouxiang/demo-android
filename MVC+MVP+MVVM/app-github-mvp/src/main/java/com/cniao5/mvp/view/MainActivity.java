@@ -16,6 +16,9 @@ import com.cniao5.mvp.presenter.MainPresenterImpl;
 
 import java.util.List;
 
+/**
+ *
+ */
 public class MainActivity extends AppCompatActivity implements MainView {
 
     private Toolbar toolbar ;
